@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: sans-serif;
+    
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height: 100vh;
+    background: #000000;
+}
+
+nav{
+    display:flex;
+    width:84%;
+    margin:auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration:wavy;
+    color: #fffefe;
+    font-weight: bold;
+}
+
+.logo{
+    height:100px;
+    background-image: url("pff.png");
+    width:100px;
+    background-size: cover;
+}
+
+nav ul li a{
+    padding: 10px;
+    background:
+      radial-gradient(100% 100% at top left,#fff 98%,#ffffff) ,
+      radial-gradient(100% 100% at bottom right,#fff 98%,#ffffff) ,
+      radial-gradient(100% 100% at top left,#814f8b 98%,#ffffff) ,
+      radial-gradient(100% 100% at bottom right,#82539c 98%,#ffffff) ,
+      #000;
+    -webkit-background-clip: text,text,padding-box,padding-box,text;
+            background-clip: text,text,padding-box,padding-box,text;
+    background-size: 0% 0%;
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+
+  nav ul li a:hover{
+  background-size: 50% 100%;
+  }
+
+  .det{
+    margin-left: 8%;
+   
+    margin-top: 10%;
+  }
+
+  .det h1{
+    color:white;
+    font-size: 50px;
+    font-display:inherit;
+  }
+
+ .det h4{
+    color:rgb(237, 229, 229);
+    font-display:initial;
+    margin-bottom:1px; 
+  }
+
+.det p{
+    color:#ffffff;
+margin-bottom: 10px;
+line-height: 20px;
+  }
+
+  span{
+    color:rgb(255, 255, 255);
+  }
+
+  .det a{
+    padding: 0 10px;
+    line-height: 1.4em;
+    background:
+      linear-gradient(#fff 0 0),
+      linear-gradient(#ffffff 0 0),
+      #ffffff;
+    -webkit-background-clip:text,padding-box;
+    background-clip:text,padding-box;
+    background-size: 100% 50%;
+    background-position: -100vmax 100%;
+    box-shadow: -100vmax 0.7em 0 0 #0000;
+    clip-path: polygon(-100vmax 0,100% 0,100% calc(100% + 0.7em),-100vmax calc(100% + 0.7em));
+    background-repeat: no-repeat;
+    transition: 0.4s, box-shadow 0.3s 0.4s,background-position 0.3s 0.4s;
+    display: inline-block;
+  }
+
+  .det a:hover{
+    background-position: 0 100%;
+    background-size: 100% 100%;
+    box-shadow: 0 0.7em 0 0 #000;
+    clip-path: polygon(-100vmax 0,100% 0,100% 100%,-100vmax 100%);
+    transition: 0.4s, clip-path 0.3s 0.4s,background-size 0.3s 0.4s;
+  }
+
+  .imag{
+    width:45%;
+    height:80%;
+    position: absolute;
+    bottom:0;
+    right:100px;
+  }
+
+  .imag img{
+    height:100%;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1s;
+  }
+  .imag img1{
+    height:50%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1s;
+  }
+  .imag back{
+    height: 100px;
+    width:200px;
+  }
+  .imag .girl{
+    overflow: hidden;
+    height:400px;
+    overflow-wrap: initial;
+    padding-bottom: 50px;
+  }
+
+  .imag:hover .back{
+    
+    left:100px;
+  }
+
+  .imag:hover .girl{
+    transition:1s all ease-in-out;
+    left:40%;
+
+  }
+
+
+  .log{
+    height: 200px;
+    width:200px;
+    position: absolute;
+    top:300px;
+    right:20px;
+    bottom: 100px;
+  }
+
+  .log1 a{
+    width:100px;
+    padding: 0 10px;
+  line-height: 1.4em;
+  background:
+    linear-gradient(#fff 0 0),
+    linear-gradient(#ffffff 0 0),
+    #ffffff;
+  -webkit-background-clip:text,padding-box;
+  background-clip:text,padding-box;
+  background-size: 100% 50%;
+  background-position: -100vmax 100%;
+  box-shadow: -100vmax 0.7em 0 0 #0000;
+  clip-path: polygon(-100vmax 0,100% 0,100% calc(100% + 0.7em),-100vmax calc(100% + 0.7em));
+  background-repeat: no-repeat;
+  transition: 0.4s, box-shadow 0.3s 0.4s,background-position 0.3s 0.4s;
+  }
+
+  .log:hover a{
+    background-position: 0 100%;
+    background-size: 100% 100%;
+    box-shadow: 0 0.7em 0 0 #ffffff;
+    clip-path: polygon(-100vmax 0,100% 0,100% 100%,-100vmax 100%);
+    transition: 0.4s, clip-path 0.3s 0.4s,background-size 0.3s 0.4s;
+  }
+
+  .log1 {
+  height:80px;
+  background-size: cover;
+font-size: 2rem;
+    }
+
+.about{
+width:100%;
+padding:100px 0px;
+background-color: black;
+
+}
+
+
+.about img{
+    height:3auto;
+    width:400px;
+
+}
+
+.about text{
+    width:550px;
+    
+}
+
+.main{
+    width:1130px;
+    max-width: 90%;
+    margin:0 auto;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.about .main .text h2{
+    color:white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    background:
+    conic-gradient(from 135deg at top   ,#fff 90deg,#000 0)  ,
+    conic-gradient(from -45deg at bottom,#fff 90deg,#000 0)  ,
+    conic-gradient(from 135deg at top   ,#ffffff 90deg,#0000 0),
+    conic-gradient(from -45deg at bottom,#ffffff 90deg,#0000 0),
+    #a847d9;
+  -webkit-background-clip: text,text,padding-box,padding-box,text;
+          background-clip: text,text,padding-box,padding-box,text;
+  background-size: 100% 50%;
+  background-position: 50% -100%,50% 200%;
+  background-repeat: repeat-x;
+  transition: 0.4s linear,background-position 0.2s 0.2s;
+}
+.about .main .text h2:hover{
+  background-position: 50% 0,50% 100%;
+  background-size: 10% 50%;
+  transition: 0.2s,background-size 0.2s 0.2s linear;
+}
+
+
+.about .main .text h5{
+  color:white;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+}
+.about .main .text span{
+  color:#82539c;
+}
+
+.about .main .text p{
+  color:white;
+  letter-spacing: 1px;
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  padding: 10px;
+
+}
+
+button{
+  height: 70px;
+  width: 100px;
+  background-color: #82539c;
+  color:white;
+  text-decoration: none;
+  border:2px solid transparent;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: 0.4s;
+  
+}
+button:hover{
+  background-color: transparent;
+  border: 2px solid #82539c;
+  cursor: pointer;
+}
+
+
+.service{
+  background:#101010;
+  width:100%;
+  padding:100px 0px;
+
+}
+.title h2{
+  color:white;
+  font-size: 75px;
+  width:1130px;
+  margin:30px auto;
+  text-align:center;
+}
+
+.box{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.card{
+  height:360px;
+  width:330px;
+  padding: 20px 35px;
+  background: #191919;border-radius: 20px;
+  margin:15px;
+  position:relative;
+  overflow:hidden;
+  text-align: center;
+}
+
+.card i{
+  font-size: 60px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin:25px 0px;
+  color: #9259b1;
+  padding: 10px;
+  background:
+    conic-gradient(from 135deg at top   ,#fff 90deg,#ffffff 0)  ,
+    conic-gradient(from -45deg at bottom,#fff 90deg,#ffffff 0)  ,
+    conic-gradient(from 135deg at top   ,#ffffff 90deg,#0000 0),
+    conic-gradient(from -45deg at bottom,#ffffff 90deg,#0000 0);
+  -webkit-background-clip: text,text,padding-box,padding-box;
+          background-clip: text,text,padding-box,padding-box;
+  background-size: 230% 50%;
+  background-position: top right,bottom right;
+  background-repeat: no-repeat;
+  transition: 1s linear;
+
+}
+
+.card i:hover{
+  background-position: top left,bottom left;
+}
+
+.pra p{
+  color:rgb(189, 170, 170);
+}
+
+.card h5{
+  color:white;
+  font-size:30px;
+}
